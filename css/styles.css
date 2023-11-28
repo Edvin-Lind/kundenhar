@@ -1,0 +1,40 @@
+
+.wrap{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 33%;
+    grid-template-rows: 10% 20% 60%  10%;
+    grid-template-areas: 
+    'hd' 'nv' 'nv'
+    'sc1' 'sc1' 'sc1'
+    'sc2' 'sc2' 'sc2'
+    'ft' 'ft' 'ft'
+    ;
+    height: 768px;
+    width: 1366px;
+}
+
+.header{
+    grid-area: hd;
+}
+
+nav{
+    grid-area: nv;
+}
+
+footer{
+    grid-area: ft;
+}
+
+#Cardssection{
+    grid-area: sc2;
+}
+
+#searchsection{
+    background-image: url("/img/bernard-hermant-x_U8hDa-1YA-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    grid-area: sc1;
+}
