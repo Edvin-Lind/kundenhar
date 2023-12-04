@@ -1,33 +1,56 @@
-
-.wrap{
+body{
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     display: grid;
-    grid-template-columns: 33%;
-    grid-template-rows: 10% 20% 60%  10%;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 10% 10% 35% 40% 5%;
     grid-template-areas: 
-    'hd' 'nv' 'nv'
-    'sc1' 'sc1' 'sc1'
-    'sc2' 'sc2' 'sc2'
-    'ft' 'ft' 'ft'
-    ;
-    height: 768px;
-    width: 1366px;
+    'hd hd hd'
+    'nv nv nv'
+    's1 s1 s1'
+    's2 s2 s2'
+    'ft ft ft';
+    margin: 0px;
+    height: 1000px;
+}
+
+a{
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 .header{
     grid-area: hd;
+    height: 100%;
+    width: 100%;
 }
 
 nav{
+    display: flex;
     grid-area: nv;
+    height: 100%;
+    width: 100%;
+}
+
+nav a{
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: x-large;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
     grid-area: ft;
+    height: 100%;
+    width: 100%;
 }
 
 #Cardssection{
-    grid-area: sc2;
+    grid-area: s2;
+    height: 100%;
+    width: 100%;
 }
 
 #searchsection{
@@ -35,6 +58,12 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    grid-area: s1;
+    height: 100%;
+    width: 100%;
+}
 
-    grid-area: sc1;
+.searchbar{
+    height: 100px;
+    width: 75px;
 }
