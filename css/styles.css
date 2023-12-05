@@ -2,12 +2,12 @@ body{
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     display: grid;
     grid-template-columns: 33% 34% 33%;
-    grid-template-rows: 10% 10% 35% 40% 5%;
+    grid-template-rows: 5% 5% 40% 45% 5%;
     grid-template-areas: 
     'hd hd hd'
     'nv nv nv'
     's1 s1 s1'
-    's2 s2 s2'
+    's2 s3 s4'
     'ft ft ft';
     margin: 0px;
     height: 1000px;
@@ -36,9 +36,21 @@ nav a{
     text-align: center;
     text-decoration: none;
     text-transform: capitalize;
-    font-size: x-large;
+    font-size: large;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgb(223, 223, 223);
+    text-decoration: underline;
 }
 
 footer{
@@ -47,10 +59,28 @@ footer{
     width: 100%;
 }
 
-#Cardssection{
+#signup{
+    grid-area: s3;
+    background-color: blue;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+#FastigheterCard{
     grid-area: s2;
-    height: 100%;
-    width: 100%;
+    background-color: red;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+#inspirationCard{
+    grid-area: s4;
+    background-color: black;
+    margin: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
 }
 
 #searchsection{
@@ -59,11 +89,14 @@ footer{
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: s1;
-    height: 100%;
-    width: 100%;
 }
 
 .searchbar{
-    height: 100px;
-    width: 75px;
+    text-transform: capitalize;
+    position: relative;
+    width: 600px;
+    margin-top: 133px;
+    margin-bottom: 133px;
+    margin-left: 33%;
+    margin-right: 33%;
 }
