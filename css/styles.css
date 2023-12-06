@@ -18,10 +18,11 @@ a{
     text-decoration: none;
 }
 
-.header{
+header{
     grid-area: hd;
     height: 100%;
     width: 100%;
+    text-align: center;
 }
 
 nav{
@@ -100,3 +101,4 @@ footer{
     margin-left: 33%;
     margin-right: 33%;
 }
+
