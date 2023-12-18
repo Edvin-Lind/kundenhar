@@ -67,53 +67,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-footer {
-  grid-area: ft;
-  height: 100%;
-  width: 100%;
-}
-
-#signup {
-  grid-area: s3;
-  background-color: blue;
-  margin: 15px;
-  border-radius: 15px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  background-image: url("/img/julian-christian-anderson-U7aeXmoaVH0-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#signup:hover {
-  filter: blur(2px);
-  transition: 0.5s;
-}
-
-#signup:hover h1 {
-  color: #0c273d00;
-  transition: 0.5s;
-}
-
-#FastigheterCard {
-  grid-area: s2;
-  background-color: red;
-  margin: 15px;
-  border-radius: 15px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-#inspirationCard {
-  grid-area: s4;
-  background-color: black;
-  margin: 15px;
-  border-radius: 15px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 #searchsection {
   background-image: url("/img/bernard-hermant-x_U8hDa-1YA-unsplash.jpg");
   background-position: center;
@@ -130,6 +83,12 @@ footer {
   margin-bottom: 133px;
   margin-left: 33%;
   margin-right: 33%;
+}
+
+footer {
+  grid-area: ft;
+  height: 100%;
+  width: 100%;
 }
 
 footer {
