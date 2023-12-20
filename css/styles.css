@@ -87,19 +87,22 @@ footer {
 }
 
 #signup {
+  display: flex;
+  position: relative;
   grid-area: s3;
   background-color: blue;
-  margin: 15px;
+  gap: 15px;
   border-radius: 15px;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-image: url("/img/julian-christian-anderson-U7aeXmoaVH0-unsplashbutsmall.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-#signup:hover {
+#signup img{
+
+}
+
+#signup img:hover {
   filter: blur(2px);
   transition: 0.5s;
 }
@@ -110,21 +113,43 @@ footer {
   background-color: #0c273d00;
 }
 
+#signup:hover p {
+  width: 300px;
+  height: auto;
+  transition: 0.5s;
+  color: black;
+  background-color: white;
+  filter: none;
+  font-size: large;
+  display: block;
+  z-index: 1000;
+}
+
+#signup p{
+  margin: auto;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  color: #0c273d00;
+}
+
 #FastigheterCard {
+  display: flex;
+  position: relative;
   grid-area: s2;
   background-color: red;
-  margin: 15px;
+  gap: 15px;
   border-radius: 15px;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-image: url("/img/jessica-furtney-YOoucEImrKw-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   text-align: center;
 }
 
-#FastigheterCard:hover {
+#FastigheterCard img{
+
+}
+
+#FastigheterCard img:hover {
     filter: blur(2px);
     transition: 0.5s;
 }
@@ -135,29 +160,71 @@ footer {
     background-color: #0c273d00;
 }
 
+#FastigheterCard:hover a {
+  width: 200px;
+  height: auto;
+  transition: 0.5s;
+  color: black;
+  background-color: white;
+  filter: none;
+  font-size: xx-large;
+  display: block;
+  z-index: 1000;
+}
+
+#FastigheterCard a{
+  margin: auto;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  color: #0c273d00;
+}
+
 #inspirationCard {
+  display: flex;
+  position: relative;
   grid-area: s4;
   background-color: black;
-  margin: 15px;
+  gap: 15px;
   border-radius: 15px;
   margin-top: 100px;
   margin-bottom: 100px;
-  background-image: url("/img/spacejoy-IH7wPsjwomc-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   text-align: center;
 }
 
-#inspirationCard:hover {
-    filter: blur(2px);
-    transition: 0.5s;
+#inspirationCard img{
+
+}
+
+#inspirationCard img:hover {
+  filter: blur(2px);
+  transition: 0.5s;
 }
   
 #inspirationCard:hover h1 {
-    color: #0c273d00;
-    transition: 0.5s;
-    background-color: #0c273d00;
+  color: #0c273d00;
+  transition: 0.5s;
+  background-color: #0c273d00;
+}
+
+#inspirationCard:hover a {
+  width: 200px;
+  height: auto;
+  transition: 0.5s;
+  color: black;
+  background-color: white;
+  filter: none;
+  font-size: xx-large;
+  display: block;
+  z-index: 1000;
+}
+
+#inspirationCard a{
+  margin: auto;
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  color: #0c273d00;
 }
 
 #searchsection {
