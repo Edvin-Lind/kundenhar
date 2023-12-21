@@ -1,6 +1,12 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   display: grid;
+  margin: 0px;
+  height: 2250px;
+  width: 100vw;
+}
+
+#indexbody {
   grid-template-columns: 33% 34% 33%;
   grid-template-rows: 4.5% 40% 45.5% 10%;
   grid-template-areas:
@@ -8,13 +14,172 @@ body {
     "s1 s1 s1"
     "s2 s3 s4"
     "ft ft ft";
-  margin: 0px;
-  height: 2250px;
+}
+
+#fastigheterbody {
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 4.5% 10% 25.1666% 25.1667% 25.1667% 10%;
+  grid-template-areas:
+    "hd nv nv"
+    "ser ser ser"
+    "se1 se2 se3"
+    "se4 se5 se6"
+    "se7 se8 se9"
+    "ft ft ft";
+}
+
+#inspirationbody {
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 4.5% 30% 10% 27.75% 27.75% 10%;
+  grid-template-areas:
+    "hd nv nv"
+    "sc1 sc1 sc1"
+    "sc2 sc2 sc2"
+    "sc3 sc4 sc5"
+    "sc6 sc7 sc8"
+    "ft ft ft";
+}
+
+#fastsearchsect {
+  grid-area: "ser";
+}
+
+#fastsearchsect .search {
+  border-style: solid;
+  border-color: rgba(53, 53, 53, 0.192);
+  border-radius: 5px;
+}
+
+.fastighetercard {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+  height: 500px;
+  width: auto;
+  background-color: rgb(107, 100, 100);
+  overflow: hidden;
+}
+
+.fastighetercard:hover .pris,
+.fastdesc {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.444);
+  color: green;
+  transition: 0.5s;
+}
+
+.pris {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 128, 0, 0);
+  font-size: x-large;
+  width: 0%;
+  margin-top: 300px;
+}
+
+.fastdesc {
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 128, 0, 0);
+  font-size: large;
+  width: 0%;
+}
+
+#sc1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  grid-area: sc1;
+  background-color: aliceblue;
+}
+
+.changeleft {
+  margin-left: 435px;
+  width: 100px;
+  transform: rotate(180deg);
+}
+
+.changeright {
+  width: 100px;
+  margin-right: 435px;
+}
+
+.bigpic {
+  width: 850px;
+  height: auto;
+}
+
+#searchsect {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-area: sc2;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+#searchsect .search {
+  border-style: solid;
+  border-color: rgba(53, 53, 53, 0.192);
+  border-radius: 5px;
+}
+
+.card {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+  height: 600px;
+  width: auto;
+  background-color: rgb(107, 100, 100);
+  overflow: hidden;
+}
+
+.desc {
+  background-color: rgba(255, 255, 255, 0.444);
+  width: 590px;
+  position: absolute;
+  text-align: start;
+  margin-top: 464px;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.card .click {
+  background-color: rgba(255, 255, 255, 0.444);
+  width: 623px;
+  position: absolute;
+  text-align: center;
+  font-size: x-large;
+  margin-top: 300px;
+}
+
+.card img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
 }
 
 a {
   text-transform: capitalize;
   text-decoration: none;
+}
+
+.search {
+  margin-top: 0px;
+  margin-left: 35vw;
+  font-size: xx-large;
+  background-color: white;
+  width: 500px;
+  text-align: start;
+  color: rgba(53, 53, 53, 0.781);
 }
 
 header {
@@ -24,7 +189,7 @@ header {
   text-align: center;
 }
 
-img {
+header img {
   width: 100px;
   margin-left: 30px;
 }
@@ -76,16 +241,23 @@ footer {
 #signup h1 {
   background-color: rgba(255, 255, 255, 0.444);
   position: absolute;
+  width: 200px;
+  height: auto;
 }
 
 #FastigheterCard h1 {
   background-color: rgba(255, 255, 255, 0.444);
   position: absolute;
+  width: 200px;
+  height: auto;
 }
 
 #inspirationCard h1 {
   background-color: rgba(255, 255, 255, 0.444);
   position: absolute;
+  width: 200px;
+  height: auto;
+  text-align: center;
 }
 
 #signup {
@@ -94,18 +266,19 @@ footer {
   align-items: center;
   overflow: hidden;
   grid-area: s3;
-  background-color: blue;
   margin: 15px;
   border-radius: 15px;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 100px;
+  overflow: hidden;
 }
 
 #signup img {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  padding-right: 30px;
 }
 
 #signup img:hover {
@@ -120,14 +293,13 @@ footer {
 }
 
 #signup:hover p {
-  width: 300px;
-  height: auto;
+  width: 150px;
+  height: 55px;
   transition: 0.5s;
   color: black;
   background-color: white;
   filter: none;
-  font-size: large;
-  z-index: 1000;
+  font-size: x-large;
 }
 
 #signup p {
@@ -146,18 +318,19 @@ footer {
   align-items: center;
   overflow: hidden;
   grid-area: s2;
-  background-color: red;
   margin: 15px;
   border-radius: 15px;
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
+  overflow: hidden;
 }
 
 #FastigheterCard img {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  padding-right: 30px;
 }
 
 #FastigheterCard img:hover {
@@ -179,7 +352,6 @@ footer {
   background-color: white;
   filter: none;
   font-size: xx-large;
-  z-index: 1000;
 }
 
 #FastigheterCard a {
@@ -194,7 +366,6 @@ footer {
 
 #inspirationCard {
   grid-area: s4;
-  background-color: black;
   margin: 15px;
   border-radius: 15px;
   margin-top: 100px;
@@ -209,6 +380,7 @@ footer {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  padding-right: 30px;
 }
 
 #inspirationCard img:hover {
@@ -230,7 +402,6 @@ footer {
   background-color: white;
   filter: none;
   font-size: xx-large;
-  z-index: 1000;
 }
 
 #inspirationCard a {
@@ -244,6 +415,10 @@ footer {
 }
 
 #searchsection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
   grid-area: s1;
   background-image: url("/img/bernard-hermant-x_U8hDa-1YA-unsplash-min.jpg");
   background-position: center;
@@ -279,4 +454,40 @@ footer a:hover {
 .footerinfo {
   margin-top: 75px;
   margin-bottom: 75px;
+}
+
+#c1 {
+  grid-area: se1;
+}
+
+#c2 {
+  grid-area: se2;
+}
+
+#c3 {
+  grid-area: se3;
+}
+
+#c4 {
+  grid-area: se4;
+}
+
+#c5 {
+  grid-area: se5;
+}
+
+#c6 {
+  grid-area: se6;
+}
+
+#c7 {
+  grid-area: se7;
+}
+
+#c8 {
+  grid-area: se8;
+}
+
+#c9 {
+  grid-area: se9;
 }
