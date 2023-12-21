@@ -65,7 +65,7 @@ body {
 
 .fastighetercard:hover .pris,
 .fastdesc {
-  width: 100%;
+  width: 625px;
   background-color: rgba(255, 255, 255, 0.444);
   color: green;
   transition: 0.5s;
@@ -78,6 +78,7 @@ body {
   font-size: x-large;
   width: 0%;
   margin-top: 300px;
+  position: absolute;
 }
 
 .fastdesc {
@@ -191,7 +192,7 @@ header {
 
 header img {
   width: 100px;
-  margin-left: 30px;
+  margin-left: -80px;
 }
 
 header p {
